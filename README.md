@@ -5,17 +5,17 @@
 No more chaos in your DCIM dump — FolderBuddy moves each file into a year/month structure like:
 
 ```
-D:\Bilder-Daniel\
-├── 2023_Daniel\
+D:\Bilder-Name\
+├── 2023_Name\
 │   ├── January\
 │   ├── February\
 │   └── ...
-├── 2024_Daniel\
+├── 2024_Name\
 │   ├── March\
 │   └── ...
 ```
 
-And yes, it **skips duplicates** and respects your manually curated folders like `2025_Daniel\Paris`!
+And yes, it **skips duplicates** and respects your manually curated folders like `2025_Name\Paris`!
 
 ---
 
@@ -53,7 +53,7 @@ And yes, it **skips duplicates** and respects your manually curated folders like
 
    ```python
    source_folder = r'C:\Users\yourname\DCIM_dump'
-   destination_root = r'D:\Bilder-Daniel'
+   destination_root = r'D:\Bilder-Name'
    ```
 
 3. **Run the script**:
@@ -76,17 +76,17 @@ And yes, it **skips duplicates** and respects your manually curated folders like
 
 ## ✏️ Customize Folder Naming
 
-To change how the **year folder** is named (e.g., `Daniel_2024` instead of `2024_Daniel`), go to this line in `main.py`:
+To change how the **year folder** is named (e.g., `Name_2024` instead of `2024_Name`), go to this line in `main.py`:
 
 ```python
 # === Specify naming convention of folders ===
-year = f'{date.year}_Daniel'
+year = f'{date.year}_Name'
 ```
 
 Change it to any format you like, e.g.:
 
 ```python
-year = f'Daniel_{date.year}'
+year = f'Name_{date.year}'
 ```
 
 ---
@@ -101,12 +101,12 @@ Before:
 └── IMG_003.jpg
 
 After:
-📁 Bilder-Daniel
-├── 2023_Daniel
+📁 Bilder-Name
+├── 2023_Name
 │   └── March
 │       ├── IMG_001.jpg
 │       └── IMG_003.jpg
-└── 2024_Daniel
+└── 2024_Name
     └── May
         └── VID_002.mp4
 ```
