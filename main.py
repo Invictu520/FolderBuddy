@@ -76,6 +76,7 @@ def transfer_files(src_folder, dst_root):
             continue  # skip duplicate
 
         date = get_file_date(src_path)
+        # === Specify naming convention of folders ===
         year = f'{date.year}_Daniel'
         month = date.strftime('%B')
 
@@ -96,8 +97,8 @@ def transfer_files(src_folder, dst_root):
         existing_hashes.add(file_hash)
 
 # === Usage ===
-source_folder = r'C:\Users\danie\Desktop'
-destination_root = r'D:\Bilder-Daniel'
+source_folder = r'C:\Users\danie\Desktop'  #Adjust as needed
+destination_root = r'D:\Bilder-Daniel'     #Adjust as needed
 
 transfer_files(source_folder, destination_root)
 
