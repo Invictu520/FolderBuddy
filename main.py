@@ -97,8 +97,8 @@ def transfer_files(src_folder, dst_root):
         existing_hashes.add(file_hash)
 
 # === Usage ===
-source_folder = r'C:\Users\danie\Desktop'  #Adjust as needed
-destination_root = r'D:\Bilder-Daniel'     #Adjust as needed
+source_folder = r'path\to\source\folder'  #Adjust as needed
+destination_root = r'path\to\main\image\folder'     #Adjust as needed
 
 transfer_files(source_folder, destination_root)
 
