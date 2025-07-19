@@ -5,25 +5,29 @@ from PIL import Image
 from PIL.ExifTags import TAGS
 import hashlib
 from tqdm import tqdm
+import subprocess
 
 def get_file_date(file_path):
-    # Try to extract date from EXIF for images
+    # Try EXIF DateTimeOriginal via exiftool (RAW + JPEG)
     try:
-        ext = os.path.splitext(file_path)[1].lower()
-        if ext in {'.jpg', '.jpeg', '.png', '.tiff', '.bmp'}:
-            image = Image.open(file_path)
-            exif_data = image._getexif()
-            if exif_data:
-                for tag, value in exif_data.items():
-                    tag_name = TAGS.get(tag)
-                    if tag_name == 'DateTimeOriginal':
-                        return datetime.strptime(value, '%Y:%m:%d %H:%M:%S')
+        result = subprocess.run(
+            ['exiftool', '-DateTimeOriginal', '-s3', file_path],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+        date_str = result.stdout.strip()
+        if date_str:
+            return datetime.strptime(date_str, '%Y:%m:%d %H:%M:%S')
     except Exception:
         pass
 
-    # Fallback to file modification time
+    # Fallback to creation/modification time
     try:
-        timestamp = os.path.getmtime(file_path)
+        if os.name == 'nt':  # Windows: getctime is creation time
+            timestamp = os.path.getctime(file_path)
+        else:  # Unix: fallback to modification time
+            timestamp = os.path.getmtime(file_path)
         return datetime.fromtimestamp(timestamp)
     except Exception:
         return datetime.now()
@@ -50,14 +54,14 @@ def build_existing_hashes(bilder_root, supported_ext):
 
 def transfer_files(src_folder, dst_root):
     supported_ext = {
-        '.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.gif',  # images
-        '.mp4', '.mov', '.avi', '.mkv', '.hevc', '.webm',  # videos
-        '.3gp', '.wmv', '.m4v'
+        '.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.gif',
+        '.mp4', '.mov', '.avi', '.mkv', '.hevc', '.webm',
+        '.3gp', '.wmv', '.m4v',
+        '.cr2', '.nef', '.arw', '.dng', '.rw2', '.orf', '.raf'
     }
 
     existing_hashes = build_existing_hashes(dst_root, supported_ext)
 
-    # Collect all files first
     all_files = []
     for root, _, files in os.walk(src_folder):
         for file in files:
@@ -65,7 +69,6 @@ def transfer_files(src_folder, dst_root):
                 all_files.append(os.path.join(root, file))
 
     for src_path in tqdm(all_files, desc="Sorting media", unit="file"):
-        ext = os.path.splitext(src_path)[1].lower()
         try:
             file_hash = compute_hash(src_path)
         except Exception:
@@ -76,17 +79,14 @@ def transfer_files(src_folder, dst_root):
             continue  # skip duplicate
 
         date = get_file_date(src_path)
-        # === Specify naming convention of folders ===
         year = f'{date.year}_Daniel'
         month = date.strftime('%B')
-
         dst_folder = os.path.join(dst_root, year, month)
         os.makedirs(dst_folder, exist_ok=True)
 
         filename = os.path.basename(src_path)
         dst_path = os.path.join(dst_folder, filename)
 
-        # Prevent overwriting in same folder
         base, ext = os.path.splitext(filename)
         counter = 1
         while os.path.exists(dst_path):
@@ -97,8 +97,9 @@ def transfer_files(src_folder, dst_root):
         existing_hashes.add(file_hash)
 
 # === Usage ===
-source_folder = r'path\to\source\folder'  #Adjust as needed
-destination_root = r'path\to\main\image\folder'     #Adjust as needed
+source_folder = r'path\to\source\folder'  # Replace with your actual folder
+destination_root = r'path\to\main\image\folder'  # Replace with your actual folder
 
 transfer_files(source_folder, destination_root)
+
 
