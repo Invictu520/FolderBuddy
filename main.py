@@ -8,27 +8,49 @@ from tqdm import tqdm
 import subprocess
 
 def get_file_date(file_path):
-    # Try several EXIF datetime fields via exiftool
-    exif_fields = ['-DateTimeOriginal', '-CreateDate', '-DateTimeDigitized']
-    for tag in exif_fields:
-        try:
-            result = subprocess.run(
-                ['exiftool', tag, '-s3', file_path],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                text=True
-            )
-            date_str = result.stdout.strip()
-            if date_str:
-                return datetime.strptime(date_str, '%Y:%m:%d %H:%M:%S')
-        except Exception:
-            pass
-    # Fallback: creation/modification date
+    """
+    Robust capture-date detection:
+    - Query multiple EXIF/QuickTime tags in one exiftool call
+    - Accept optional timezone offsets
+    - Fall back to filesystem times only if all EXIF reads fail
+    """
+    # Ask for many candidates; videos often need the QuickTime tags
+    tags = [
+        "-DateTimeOriginal",
+        "-CreateDate",
+        "-DateTimeDigitized",
+        "-ModifyDate",
+        "-MediaCreateDate",
+        "-TrackCreateDate",
+        "-FileModifyDate",  # last resort before FS times
+    ]
+
+    # Force a parseable format; %z adds +HHMM or +HH:MM depending on exiftool version
+    # Both are handled below.
+    cmd = ["exiftool", "-s3", "-d", "%Y-%m-%d %H:%M:%S%z", *tags, file_path]
+
+    try:
+        r = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        if r.returncode == 0:
+            lines = [ln.strip() for ln in r.stdout.splitlines() if ln.strip()]
+            for s in lines:
+                # Try with timezone first
+                for fmt in ("%Y-%m-%d %H:%M:%S%z", "%Y-%m-%d %H:%M:%S"):
+                    try:
+                        dt = datetime.strptime(s, fmt)
+                        # If tz-aware, convert to local *naive* for folder naming
+                        if dt.tzinfo is not None:
+                            dt = dt.astimezone().replace(tzinfo=None)
+                        return dt
+                    except ValueError:
+                        continue
+    except Exception:
+        pass
+
+    # Fallback: creation/modification date (copy time on Windows!)
     try:
         timestamp = (
-            os.path.getctime(file_path)
-            if os.name == 'nt'
-            else os.path.getmtime(file_path)
+            os.path.getctime(file_path) if os.name == "nt" else os.path.getmtime(file_path)
         )
         return datetime.fromtimestamp(timestamp)
     except Exception:
@@ -100,7 +122,7 @@ def transfer_files(src_folder, dst_root):
         existing_hashes.add(file_hash)
 
 # === Usage ===
-source_folder = r'C:\Users\danie\Desktop\Bilder'  # Replace with your actual folder
+source_folder = r'C:\Users\danie\Desktop\100MSDCF'  # Replace with your actual folder
 destination_root = r'D:\Bilder-Daniel'  # Replace with your actual folder
 
 transfer_files(source_folder, destination_root)
