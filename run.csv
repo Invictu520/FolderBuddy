@@ -1,0 +1,316 @@
+timestamp,action,src,dst,sha1,size_bytes,date_used,date_source,note
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01152.JPG,,8bece48ad075f0cb912473e510a4dda8aab55818,10846208,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01153.JPG,,ff2e898880a5f64ce06898fe17ea72b5ac4b22dc,10780672,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01154.JPG,,ed6bc5c0c717c8b79c1c6004942db7911208819b,10780672,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01155.JPG,,80aeae40c644853dfb45b2b48731dee202c3b2cc,10813440,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01156.JPG,,4553252a90cf7bbb8f46d70cd79f2621a1728e64,10813440,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01157.JPG,,181d54b6d387b6f49129486ea53483e1e0cc73c2,10125312,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01158.JPG,,06eeb658acbd73ca373b87a08e72ae37dd33cb2b,10059776,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01159.JPG,,b62a912429376725646206d43e5359bd678485ec,10059776,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01160.JPG,,436c61864c2d23663c88cad125c04da71069e65a,10059776,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01161.JPG,,c383dea6bc0e80a3756b33c039ff03db4371b322,10125312,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01162.JPG,,0c4ab4cba2aac91068b9b545c909f8e2c1cf2807,9568256,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01163.JPG,,7ec45dcc192f196b0ecd284aa6997069ef820398,11927552,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01164.JPG,,4baa6935f0aa83e5c2cd35032fa0c269fb0096bc,11894784,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01165.JPG,,d9ec0551c2dea127159fcc19eba97bacd2867218,11894784,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01166.JPG,,c99d8ecfdf9f50db869f4d6f9a92b80ca234fc88,11894784,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01167.JPG,,747af2afaa3f0ca1b8022886b3b623cfbe110307,8126464,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01169.JPG,,6f88b3564d2daa749be81f8965e10262a83170a2,7766016,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01170.JPG,,083cf9fdf522692fcca949c7660e8ce35a445049,7962624,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01171.JPG,,449279d4799557d921eeb45bc24ca97bef2f8838,7831552,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01172.JPG,,fc93657dbe55f724f63f5925ffbcc33ee6f29eb0,8552448,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01173.JPG,,82a0b34ae00ff01d63f65f43455caf02cc53c7f7,9240576,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01174.JPG,,078dd459a1693a66e88c7815895c66e186b4c16f,8126464,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01178.JPG,,7d7ddfafab8bf15c230dd74d4ed31d72614a6a6e,9240576,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01180.JPG,,ec226282c88a26e6f44c867bcf85e3bfffb5d526,9371648,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01181.JPG,,317bc92f791d4e6dd6bf3864aab6bfc0b156c297,8880128,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01182.JPG,,b5c1817a7fe4bb9119619a7e35921a251d9728ae,9043968,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01184.JPG,,fad85f7511ab0483a9b917efbe81db292123b1bd,8093696,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01185.JPG,,4d9d7ba669001b2ab871d81704df83495e8b1890,9338880,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01186.JPG,,ddeb33ba2beb2cc8dfe61296e81d08fd551aabd5,9011200,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01187.JPG,,a64f2cd5a440ff0b1b7adabdf4522faae7367886,8847360,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01188.JPG,,d7700855d926f3a8860e7411d4f53edd14d3fbbc,8781824,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01189.JPG,,b57952d2d57d6b7daf3e6bc3c0cfd6e03c339d21,9207808,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01190.JPG,,b5ea4400a5c9c7eb6f4e1d10300cdc6614d41fc8,9273344,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01191.JPG,,393d559693f64eafdbb131d4ac26005d93ea2fc5,9764864,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01192.JPG,,22cc797a1e24d6dddf785c0161ecdfd1ced85810,8192000,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01194.JPG,,be770feafa65326b788b88b9e057754dc430dabe,8290304,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01195.JPG,,94fdb5b382af6121ad8ac8d886c78b30545f6130,8224768,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01196.JPG,,b58aae9d9ec6cd48ea9ee7d8b01bd025483d7685,7929856,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01197.JPG,,09ceeefd609bae6312259d920befdde77c1ce32c,8421376,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01198.JPG,,5f5db8b9b21365f60ebf36fecb6344dc89f9243c,8486912,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01199.JPG,,55638c1b5bf861177fe9238f9f693110736b95ca,7962624,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01200.JPG,,aaea81ef27321393f8e656fd4d412c662bab60ec,9306112,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01202.JPG,,480ba48c713273030a76beee41afa3dfffa6685a,6684672,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01203.JPG,,27bace3353757ff436b5bb591440c3c001909618,7995392,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01205.JPG,,207b9b24115f0f5ff13e8a5329a2f314eeadba58,8847360,,,already in destination
+2026-05-28T09:22:50,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01206.JPG,,6fedd21f78c99de444d3f9fb7ee494f0350a3619,7077888,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01208.JPG,,119426997ec804059cd551373d5e6e15fb02b640,7536640,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01209.JPG,,68f25b7a81294c2b8e2ae789a65f53f41519fd5c,8290304,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01211.JPG,,1a22e9717594712389f279d33fca60a7020df073,8486912,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01213.JPG,,4f0641b5d553d568e601a5ffd174748b259cf60c,8912896,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01214.JPG,,d1b5286147bebeed9bf9468dc72ddaeddf928b17,8355840,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01216.JPG,,6e93f781192779b019ee30d89f07c7a42e5c76cc,8060928,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01217.JPG,,401542f6ff25f171e09511b24f6d649ea59d656f,8388608,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01218.JPG,,b16e93e2570f2884a71357aabb2ff5f8ce588de1,8060928,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01219.JPG,,ec41ffa349dad62f3445de8ff1cac0fe25c79b8d,8519680,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01220.JPG,,f197708745b29dd7fb3dd70541ccbc6b108b8c0b,8978432,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01222.JPG,,5e02dc8af09c0f3c0fd15f261dde255ffc5ad18f,8421376,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01224.JPG,,dbe9c0507d390fe3ed117ee1125b124d782bac9b,8290304,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01225.JPG,,0b0a6861db4c8e4b2d077f6e457a0391c689fa29,8716288,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01226.JPG,,18d3f1538badf3d79523d83def604fab77c5b9f6,7798784,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01227.JPG,,1e65061e2151656e4ba43ce77702439b03a1f4be,8093696,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01228.JPG,,d16688c73efd91bcdf35ff4152eedbd7ef8b8b3e,8192000,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01229.JPG,,02fc6cdafd927b35ccc271c6bc8c3ea80bd26c7b,8716288,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01233.JPG,,f0f817198fb2a1b9820d0b28412b775fcf1d2118,8355840,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01235.JPG,,82d3f4d1180c08fa5bfa003f4d1a964a2736f70d,7307264,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01236.JPG,,ed83f5e30e51d3733fa236a71a8e74781bbeb1e0,10780672,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01237.JPG,,d5284278e95311bc7881cf8bf84682e2cc0e71da,7569408,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01238.JPG,,10d236eb1fe67e2cfbf9bd4fb2cc30d6dff61eb6,7274496,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01239.JPG,,93795ad8dc15fe7681eeb5552f8b26dcb5d6f733,7503872,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01240.JPG,,90ec9b3d35d71d39904b70d57af07965776ee9e1,9142272,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01242.JPG,,a64447702ba85e549cd93db6d8356f50e099efdd,9240576,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01243.JPG,,54a54a4bc250756d50e6be845552ebf291066c25,7667712,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01244.JPG,,8c1662e5239749b809a033883ddd8429ed572fcd,9601024,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01246.JPG,,9ed7f01ae0e3e257a53cb726a75e5c964648922b,8224768,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01247.JPG,,a23a72034c9b0078023631379fb8ecab2a4b0ecc,7995392,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01249.JPG,,bca1fcc3c550621cd57ee890ca053c4390012e0d,7143424,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01250.JPG,,491e2a19df10b15a86c72bf1ec546ed8165f095c,9371648,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01251.JPG,,4894951d6faf4727b23dc7141e6696619cac9a28,7634944,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01253.JPG,,7f46edc952a59a193b84b2991e0804e4ed0866ad,9437184,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01254.JPG,,77db945b3381cf8aa7eb86dbf9edbda114bd5d12,7962624,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01255.JPG,,2d07ddc01ecd4f31c6a14e53a6cee73da0f9d498,8552448,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01257.JPG,,c5ea6cea82f6f98ddddbf21ffdb40c539a4bdc1b,7766016,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01259.JPG,,8adcf132e02039f50dfde85a7428c074c33eb185,7307264,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01260.JPG,,5c049a8d6e7b155a34a669aa3049bd05971d7b3f,8486912,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01261.JPG,,336eed35f434c8ca872ce61d80139c3ff60a29ab,8749056,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01262.JPG,,da6ed855e8d02203dc468c6cef2551f40322f08e,8257536,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01263.JPG,,e130f691e9f9e75d64e5a2db3b38bec74c10afc0,8421376,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01264.JPG,,0c618bad046c4c1f643dc7df0b7421dccf38fe77,8060928,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01265.JPG,,1a0e19458cfdf9a70e86f10da01b6300fe46ac0e,7962624,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01269.JPG,,a55fd2ee47e27acb53124bb82919f2edcd734b4c,7536640,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01270.JPG,,6dc22d3c3cfaf44edb5559a56a86bbc848a08984,7274496,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01271.JPG,,af9537ef4dd19dcb242985b1907ef761bda3f92d,6815744,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01272.JPG,,82a82e8035c2101b58c239ba0abed6ab9641d33a,7471104,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01273.JPG,,47fd05c2573a1e8d4ab7f6ff7b8fa310e23c4a99,8126464,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01276.JPG,,4a929f691c54897e48468c2dd7b53b8c1ae486f3,7471104,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01280.JPG,,b34e08a4937f440b768cd11f850243ee14a0b3d1,8126464,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01281.JPG,,d1505d042285d3ddcce788714009ebc2b28659f7,8814592,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01282.JPG,,df1359bb065d2ba7374e5371e007698663de9cd2,7208960,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01284.JPG,,25f52af4012a2e97f693ee5355c892af4802442a,7929856,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01289.JPG,,d5eb45796e69b9225a09d77c3414f8d733088b1f,8552448,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01290.JPG,,183d0d5ded870f99fa1d205a2e88bf99ad359593,8388608,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01291.JPG,,aa8a11972d78350ee77f7a26193128c6e5842cc8,9371648,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01292.JPG,,6c56c3b2bb94ed9fe7fba7a749e541b7f8a76fa3,8323072,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01294.JPG,,180a1cd63ea88e99dbd438a0785fbffe74b63ec5,8814592,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01297.JPG,,813e5935f5642074cf92d3e6ed980a4e1db410ee,9830400,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01299.JPG,,0bd334e753f5f1f0aeb4b3d1f6dc607e3af6c1f6,9011200,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01300.JPG,,496bcd761ae438cbc84c3f5ae741cdec6cecbd7b,10256384,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01301.JPG,,669415bf6b72181a5626edd2a96c8a3e7836f7a9,8781824,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01302.JPG,,00d109066ccdfb5b23827b54ea1b6dce66ed4e35,9207808,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01303.JPG,,96c17eee78eaa5fb20054af0163e9a60c9dc2c0b,8290304,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01304.JPG,,5ac594d7eee1365f7827c349105a9fe1cce5dd5f,8749056,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01305.JPG,,35e1ae2d30c1bb74f11603be28aff2e72c04c941,8617984,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01309.JPG,,f995d0d8108c9680d1d5483b09f192d59093b08a,8388608,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01313.JPG,,852a58a1a01ce08a02673c8691883cb789facc78,8355840,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01315.JPG,,5ae1e37401c71aae8c212123e777c4290b0e66b0,6848512,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01317.JPG,,b163116adda10327e6301e0b37dcfe37b2e09f59,8159232,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01321.JPG,,6772ce9d6cd92bf1c2f72de35a649078b63d2a4e,9273344,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01322.JPG,,db6acb6bcb23b65d1f0ffec4174bfe810351f1a9,8585216,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01323.JPG,,8a5674e1b8c14ef113d623fec9c0a7c1a42e0fce,8617984,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01324.JPG,,f1cc00d2f0415ea3ee4a180f5ee647ec1b598709,8028160,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01325.JPG,,17fd8f4a884c5e1b686ccfa3b24717965afe99b5,7766016,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01327.JPG,,37a1b4eeb3e5477eeae69e2a65c6f671a7da8939,8257536,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01328.JPG,,747e95d463919236739922757b8844cefb0ef708,7012352,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01329.JPG,,6aabf979201fb0de4b166e0bb048276a653490c9,7864320,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01330.JPG,,9d4d1d9841710f7333391e3a118ede7df64f6dd4,8290304,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01333.JPG,,7cc6c0a6c6552d539b0452263b48bee08edf79f0,8519680,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01335.JPG,,7694915097b92a415f089ee4cd25f4527a0f7de5,8552448,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01336.JPG,,0363b19f99a08334096e39de97f31d9158d1b042,8388608,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01337.JPG,,2eb5232d0376335e01413406237f5e0f96b6207d,7929856,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01338.JPG,,cf1f16e1d452d5c0769886e18640ebb7ff49104a,7634944,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01339.JPG,,0c34f4ca220bee85329a244167314979078430c7,8126464,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01340.JPG,,29009fa04c5e3a79bdd7335d346eea049e9fa915,8454144,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01341.JPG,,2b2feeb3a02e58630d9eca11cdeaf1cac6a3737a,6782976,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01342.JPG,,d19e14034ee577367d32f2131c55d598a3e95811,6356992,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01351.JPG,,36e2866ff6c61cc7faaeb5667c11ecd592595498,8028160,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01373.JPG,,2107d75d5f02ba34a446d39427d85059359c2f98,7405568,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01374.JPG,,2fec1f2f4d50c32fcaa69931684e54579cc61ddc,7241728,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01375.JPG,,d2543e9ffa9284b91b08bef825e7f6b968c912ba,7438336,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01376.JPG,,4d50b29e03d1a0ae995e72c79ad6eecdfdd09c02,7438336,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01380.JPG,,05e69c43a10b2ef4eccc75c8fb9faf852c8dcd47,6979584,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01381.JPG,,8c90cf8bc46cea0c5294af9b8cc26197d692cd69,9207808,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01382.JPG,,cd4dee5678e934311d1fa7b812adffef614c9bbb,9830400,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01383.JPG,,de6d4e6c31e2d5951d4ed1f48b4c0166b7650467,7766016,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01385.JPG,,22a07180b995d260f406a1cba9214f6f716e7d71,6815744,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01386.JPG,,fffd1bc2fb8289492e1ab0d371cce77de3794147,5996544,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01387.JPG,,a1b27928b31e2feaaa59e4c6a4706a40d1d000c9,8323072,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01388.JPG,,399483cd5079fb7794fc5354451e8890b32f9e45,7143424,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01389.JPG,,e341fed9634a68462e119ef30353b158e9a5c6b0,7569408,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01390.JPG,,d753155d53e5601ae345671f45b8ebf6c36afac6,7766016,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01391.JPG,,a52c40763827fd59f6d6bd8e5d465dc02a51da9b,6324224,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01392.JPG,,b53cec911999216f736a9512dc41f6abc96aeefa,8912896,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01393.JPG,,f97dfa0cdd2d5d34a6794a8ec43c4ae171ee2536,7536640,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01394.JPG,,676c8fdaec42223eb18534bb4fa1429e2dccc6fa,9142272,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01395.JPG,,651b6e7ebe9ddfdd818eb542d8f2ccd199940498,9437184,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01396.JPG,,447bc3ca70b80b202dc58794077a25e03cd56f32,9732096,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01398.JPG,,5446fd0a951cf7f90cc7d243c60b36ce7352e0a9,7503872,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01399.JPG,,9a6bd9fb07f3c4f24f0ad2780610b0ba343ac23c,7831552,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01400.JPG,,3111539928674c3b7929ad981cd3aff701dc96cd,7176192,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01401.JPG,,2466fe45701a1edaa13730940f4c491ea55f4409,9797632,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01404.JPG,,af2df5ab982e2bfb0a4d1a59752ec8d8f0c87511,10027008,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01405.JPG,,ae394725d3123d86d4ca97c71951eceada27ad07,10452992,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01406.JPG,,459ab92f4efb796366b1d98a50910ac10c52bb9a,10813440,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01407.JPG,,1cf8e5050de3b6ae00896c8599948fd5288018cf,10027008,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01409.JPG,,6cd00e378d0a138128fafa9c1f245288bcc93d26,10420224,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01410.JPG,,a37abb786da78adcb834355377260a1b8c9d73dd,10518528,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01412.JPG,,0bc835eb28ee5cc00b295ef10f911ff8d9e03e7b,10911744,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01413.JPG,,3c30bc8e7aa60364b61717e4ee2e9c8a0c4c36de,11042816,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01415.JPG,,4c11c1d21c9c50a7135c123d766ed1e1dee8a13e,10059776,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01416.JPG,,6797c5ce53f490ccb2512d04340b2936aaafbb8a,8716288,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01417.JPG,,c7baee941e4ec2af47a395da66f046d42a131bcc,8519680,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01418.JPG,,d8215f8b17428361cbbb656617ae3b24cec03b79,10059776,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01419.JPG,,dd20afbfbb2c5e9ba8cf9acd171c7de2b44bef92,10780672,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01420.JPG,,f00302114d935ea244f3e37e0b696c5efba3c369,9928704,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01421.JPG,,c08fa81a1a36439d9dbc20292f4a15d3881af69e,9568256,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01422.JPG,,df1affb8e6beef66c0d4ebe76142387053e177ec,9732096,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01423.JPG,,cde4c43ea12e7bcf5bee324301d204a4a016f76f,11534336,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01424.JPG,,b750337f5c6ecff80a5d44c2959fd7fb21568e14,11141120,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01425.JPG,,9b14887c07f6d454d752e8353320c9251f8965e9,10223616,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01427.JPG,,b473149e65da34948251a25bf21d80fe96c73e8a,11042816,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01428.JPG,,e8efa127240dba945fad6cf5212a753c7d421585,10846208,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01431.JPG,,db0810147fe4a0f295224db6e823899ae0b1bc70,8224768,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01432.JPG,,7f776327119981d9d98ad269c37f71ff9e6b091f,7667712,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01433.JPG,,4cb49d464cf5500c417f8a6a5dfa2d8e178f86ad,9535488,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01434.JPG,,44a2a69de4706c9a1b656f9b8667a7305f7e068c,8421376,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01435.JPG,,62680fcb4e302c4aae9acf17408e9878a9a7a28a,10551296,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01437.JPG,,47c120c75fc51784e533d02efeb8ea89f3e1666c,11698176,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01438.JPG,,d5ff4be8d87ec23a65ee260035e1f232c8cc868e,11567104,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01439.JPG,,e38a32e9d5fafb5cb702e2f34653d8609982423c,7208960,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01440.JPG,,0ca71a0ab44d51462e918c7b98f8858473d5752e,6356992,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01441.JPG,,7eecbdb3df71af205b02687b7026f0f9c9826b26,7569408,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01442.JPG,,114036c493f70f807435ddcbc53b4155afc5f35a,7536640,,,already in destination
+2026-05-28T09:22:51,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01443.JPG,,d9a01038918be652c10d1854f5cd299ff25bd6cf,7995392,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01444.JPG,,bfe2ec07d23d6b48c2bd538186331bd702a43c77,6782976,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01445.JPG,,22b37cdedfade3003fe8e4e8f248998d16e57196,7602176,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01447.JPG,,b0792f38c218439f50bab5c60e0431bb6fafc935,5996544,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01448.JPG,,85b9af79c2a6d8e4800a5c00e7a537af1367ba5d,5865472,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01449.JPG,,64bb09d57a4cdf11e623771ffa074d30d1ae186f,5996544,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01450.JPG,,9d6d6c447b38beb3860f2602fc6f4094822d28a8,8060928,,,already in destination
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01451.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01451.JPG,d1a6de6f85fb93fdf322cfb0602c3b31ae54c701,6488064,2026-05-15T21:40:48,DateTimeOriginal,
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01452.JPG,,3a2055b4ff7da3ba069c9a61d0ed3f5ea6bbd30e,7733248,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01453.JPG,,9e14d7562d3077db5abf7813a5829091e13b8955,7110656,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01454.JPG,,203773ac908948bc75a34a0f703a9a8e8bff4621,7110656,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01455.JPG,,f79f3919f25c0fe51f9be5e075f588bc4766a375,6225920,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01456.JPG,,7f2d21a4662c33634bf9c7010350397768318e3f,6520832,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01457.JPG,,1972088e3ee97209bc2612f0f1871b3eb2001f98,6946816,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01458.JPG,,8aeace961362df7ef3ea9e59b157f6f3719d4dc6,7700480,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01459.JPG,,bf2f0790910a8fa2f9800466ffe11512810a0bfc,7012352,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01460.JPG,,355fa54599906b635636b4da71318dabcdcef4f0,6979584,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01461.JPG,,85f1bc8e580a23e4b8e8aed6c793aa776a1a361a,6782976,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01462.JPG,,02875bad2dade0b32c68d365bd8f4c4135382127,6914048,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01463.JPG,,dac9f98370aa8a002c1a9c9e69243711fddd3416,7241728,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01465.JPG,,fea990fa7a3eb4416b19ac241e8073a89c6dd6cf,7634944,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01466.JPG,,a5ac8c8c427af4ee7939e1f4814cda3d212414ec,7831552,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01467.JPG,,586be586079d88a9050056d7443bc62ca6a95bc6,7798784,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01468.JPG,,7af2306aef7232a7993f19d6eee5f105dbf1e99a,7438336,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01469.JPG,,d2be4c1f2fffcff470baae5076a50c3243aa8b25,7340032,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01470.JPG,,0c9a9c56e4e16c51008f6083bbe45dc8b1fc5a50,7143424,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01471.JPG,,cd824bc9bbef0ed88ef2d9ebf61ee7bf8b90da98,7340032,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01473.JPG,,5aac5e13b67cebfd267e04bab65d32d3496134cb,6881280,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01475.JPG,,26f0b21ac00e6d0b5c52ce149c0d825dd7039584,6750208,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01476.JPG,,4df2ddaa7757a86108c9d1651e991c20c1876c27,5832704,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01478.JPG,,904da59a95e4efa70e36879caf0840a08d8cb9f4,6946816,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01479.JPG,,d11d2c5b120f9213b3880e5343e189fa4e8fefb8,6619136,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01480.JPG,,411c86ff214931416e892e97cd6ba7ed8101c80d,6356992,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01481.JPG,,153135a41dd95d67db3074a5cf71eee3d86f6ea1,7077888,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01482.JPG,,1fd2e7f8ed4393ffa522bacebc803d3a3813992f,7503872,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01483.JPG,,237821bf4e077bc2bb7ecb190c412b7e96fd89fa,7405568,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01484.JPG,,7475149f5dcec31b6485eacfb884bf56cf02a62e,7995392,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01485.JPG,,c9c150eb0992a11d0c8d8bc44e90b45f42bed804,5996544,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01486.JPG,,a5aa985d67dc0e1bd24915647cae907dd239a010,7274496,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01488.JPG,,e8361523be9663763b390643de0357db1468ad55,7372800,,,already in destination
+2026-05-28T09:22:52,skipped-duplicate,C:\Users\danie\Desktop\100MSDCF\DSC01489.JPG,,1f9c877e34506538c9b7af78508d0ef8079e1d59,7307264,,,already in destination
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01490.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01490.JPG,38c8e088ccab088e646c4d244d487cb99bf601de,9043968,2026-05-22T13:44:14,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01491.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01491.JPG,d441ce0b9e247b5c3dcdf019f5e3ff609a5bdb99,8159232,2026-05-22T14:02:58,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01492.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01492.JPG,ccb9e0b38581426aed9ed4eb95a80fdd28b4618d,7667712,2026-05-22T14:03:01,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01493.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01493.JPG,0beb02f6ac35d8f50dbf6e30cd43ecfa6d427c1f,6520832,2026-05-22T14:03:06,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01494.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01494.JPG,014bba6303a42b36860f418a13fdfbdc5d87cddb,8192000,2026-05-22T14:57:11,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01495.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01495.JPG,469f57dd8d969ef6bf224a4f3396fd3ed6f97587,9076736,2026-05-22T14:57:25,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01496.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01496.JPG,9ce8cd57be04b3899738783487d36eb55246e2ca,9437184,2026-05-22T14:59:47,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01497.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01497.JPG,eb53efd97fd907e0cb94067226e33f2e22937825,11730944,2026-05-22T15:10:35,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01498.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01498.JPG,f3e9cbf5f07e94dc005280e32ecd2e40dc56e2c4,9666560,2026-05-22T15:10:54,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01499.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01499.JPG,1304d5630e5e882aa74a8c4c757da5f8e320c6b3,8454144,2026-05-22T15:11:09,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01500.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01500.JPG,5a1700e2488873e261e1eed71b595dc70f29a2b5,7929856,2026-05-22T15:11:39,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01501.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01501.JPG,c94f55293eae739032c0dd6e432c84589667876b,11599872,2026-05-22T15:14:37,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01502.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01502.JPG,0c1c73bc56922ee4c92893012a4197a22c6976e2,10452992,2026-05-22T15:19:51,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01503.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01503.JPG,a192e5ce9de2248482b351d43165b8efdbe2e668,4554752,2026-05-22T15:20:16,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01504.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01504.JPG,afc1cbf61144985f9bee4de1f4274f172d09750a,7045120,2026-05-22T15:22:10,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01508.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01508.JPG,71072b27c9c98e6de0ec152712468a0bdc367869,8388608,2026-05-22T15:27:53,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01509.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01509.JPG,ede0af54db1767c3bd843ba544654327eee42f50,9764864,2026-05-22T15:29:01,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01510.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01510.JPG,294d497e512156c1ff3a9c9e2b8c0d22ba86260a,8585216,2026-05-22T15:29:29,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01511.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01511.JPG,b8da933a6fc8b2109e2c9f445addf670056a5c21,7733248,2026-05-22T15:29:41,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01512.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01512.JPG,c22dca9f704a71115fcf81aedfc7f650498bd7ba,6914048,2026-05-22T15:30:11,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01513.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01513.JPG,80fd0edec0e92eba5da00db445876d63dcbfbb8f,8192000,2026-05-22T15:30:58,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01516.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01516.JPG,061a8ac6c46b5b72c4dcbc662490894956d08dbf,7733248,2026-05-22T15:37:10,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01517.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01517.JPG,91e3453a7d349f628b535f8df54bfc47201d973a,6914048,2026-05-22T15:55:21,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01518.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01518.JPG,aa5ae00cbd2813bfc1acaaddbd5fc53bced7ad20,6782976,2026-05-22T15:55:31,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01519.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01519.JPG,2f918829580a2a382caf98640312641f1884c7ca,7667712,2026-05-22T15:58:08,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01520.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01520.JPG,57a0f29fac6822e188f57f86f6bc556907433298,6094848,2026-05-22T16:02:47,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01521.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01521.JPG,5bbba55f4eda02236a6386eb43c656ef829f5270,9142272,2026-05-22T16:31:11,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01522.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01522.JPG,70a57b09da5c68dcef582782850972499e56e3be,6324224,2026-05-22T16:41:51,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01524.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01524.JPG,258fe1f5ab95455ab58d3653eb552f5ea910fe88,8028160,2026-05-22T16:42:47,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01525.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01525.JPG,d3b1423bd8be6f18e17e238cf8327a7e477410e2,8814592,2026-05-22T16:43:10,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01527.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01527.JPG,260abc2d7adc68a12e59ccac67a4d00869c43cfb,8519680,2026-05-22T16:43:39,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01528.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01528.JPG,653d8fb5f18f7b60788d01858f528711e8e964e6,8945664,2026-05-22T16:57:57,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01529.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01529.JPG,b9a93819df4840d55c682c9e47ab5e3f19c1a01f,10682368,2026-05-22T16:57:58,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01530.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01530.JPG,65c7d8f0ba07302b49a30c28db1d95b261921eae,6651904,2026-05-22T16:58:28,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01531.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01531.JPG,997490baf32c206e4fcec1e68a5eb9de370deacc,6094848,2026-05-22T16:58:32,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01532.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01532.JPG,3f7c85e0a4eae4152979d08a442ac806d83ad9ee,6651904,2026-05-22T17:00:45,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01533.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01533.JPG,224b503b8cfc980a0055188df72196d8b1f7d934,5668864,2026-05-22T17:28:31,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01535.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01535.JPG,071d18d4c901f86d35bb537f5c538f5674f08676,7929856,2026-05-22T17:29:31,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01538.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01538.JPG,d9333a0a019b1a8ccedf1e3f2551fa381905629c,6258688,2026-05-22T17:45:33,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01539.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01539.JPG,ec0b5fc77d3aec529683ea903dda781d2aef800c,10452992,2026-05-22T17:47:00,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01540.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01540.JPG,8af2ea60248e2aa71b97d6cc3becd684a11c7374,10092544,2026-05-22T17:47:08,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01541.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01541.JPG,9e934479dda9fa9dc33993584824a3ccc771ab2c,7700480,2026-05-22T17:54:31,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01542.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01542.JPG,64a2f7b26fdbe715b312e1dd2604b1aea9fd227d,5963776,2026-05-22T17:54:47,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01543.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01543.JPG,21af73549a737d0953bcf3460ff9a54a948ddf93,8421376,2026-05-24T10:07:10,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01544.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01544.JPG,8c15c6a181e1418b8255016766f5ede6b0a81e3b,6979584,2026-05-24T10:07:25,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01545.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01545.JPG,baaf3398888d5dc406c24acf796660578faad537,8159232,2026-05-24T10:07:42,DateTimeOriginal,
+2026-05-28T09:22:52,copied,C:\Users\danie\Desktop\100MSDCF\DSC01546.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01546.JPG,3171156405e0cecf05e3ed16c6dd5ab2cd05cf10,9043968,2026-05-24T10:08:09,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01547.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01547.JPG,c8b4a50637c1b1473f61fceef79bfbc4350ccb44,8650752,2026-05-24T10:09:14,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01548.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01548.JPG,2776714cedbae9e3c3969bc1f2478ac4fa49afbe,5373952,2026-05-24T10:09:48,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01550.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01550.JPG,4cb0759a3ccdfbcb3377e1ee459f838dad793d32,5275648,2026-05-24T10:10:32,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01552.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01552.JPG,0ce67c7342a89ff71b631d80ed0f6e0c00d94bab,6127616,2026-05-24T10:12:30,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01553.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01553.JPG,864e0f100e960e3f47b4ef7caa5b41f9b87a9fa1,9043968,2026-05-24T10:16:57,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01554.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01554.JPG,05ca14fc195e01c5fc35022d85d270c98c6af1c2,11960320,2026-05-24T10:17:48,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01555.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01555.JPG,9af1faab1b91c3d1fb9724e881950dff9008633a,9404416,2026-05-24T10:50:27,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01556.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01556.JPG,cd9214683499eb7ad614c2fbd9b7306f8465713c,9076736,2026-05-24T10:50:39,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01557.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01557.JPG,3983033d663a7b7a0e66029319c7c09dcc8ded20,8323072,2026-05-24T12:26:04,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01558.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01558.JPG,a63c124a3e28e82ad72da4181e33ce1b12f9ace3,7208960,2026-05-24T12:26:21,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01561.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01561.JPG,b9bea7942305c0bc17ec2d24d786e48bbfa4486a,7897088,2026-05-24T12:30:25,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01562.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01562.JPG,0472aa84a6e2a1b7b879a409737372a6018ad06c,8159232,2026-05-24T12:54:51,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01563.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01563.JPG,0cde6ddfa7caf806904377f2dc5f491f38dc3970,7536640,2026-05-24T12:56:04,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01564.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01564.JPG,e6e06240185d023643de40a37e973f22b7d978dd,6684672,2026-05-24T12:59:53,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01565.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01565.JPG,ba0bfcf5b22bbf7b70044d0868714b69578f8fb3,7897088,2026-05-24T13:00:00,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01566.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01566.JPG,2ebe3a7b602550a0114854c085286f9aa0214a95,6979584,2026-05-24T13:00:19,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01567.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01567.JPG,d847f548ef490a7c0af439a830367d4654dd7c0d,6455296,2026-05-24T13:00:59,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01568.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01568.JPG,d46b5d41ee780803b3e46b151cda3e6140d86140,6389760,2026-05-24T13:01:41,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01569.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01569.JPG,94c318caab145367f48f64cc78648b85d259fd39,7438336,2026-05-24T15:30:09,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01571.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01571.JPG,960c82b847bea7607e23ca768b70878b461ca44a,8912896,2026-05-24T16:20:57,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01572.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01572.JPG,bf7b5be1ab1bce0212749dac6f8faac245511c68,7995392,2026-05-24T16:24:53,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01573.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01573.JPG,33ffeb1de0189c23caa9c3a8103fdd5397cb2444,9011200,2026-05-24T16:26:23,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01576.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01576.JPG,c41d1c3940811ac40b841d77800f9d17e48598be,10387456,2026-05-24T17:01:00,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01577.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01577.JPG,a468fecb26c8e1330a1e4fef6c08b86ae74b29de,7831552,2026-05-24T17:01:32,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01578.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01578.JPG,f1e5d8e70fee58f9145c4f6e6339953f86a75cb8,9207808,2026-05-24T17:02:28,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01580.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01580.JPG,c8b1f7c1a162aedd221f26f282fab048f9683b16,7536640,2026-05-24T18:42:25,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01581.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01581.JPG,12df57af9d2a5b6990a2f8df59d4bea24ca5ae9e,7798784,2026-05-24T18:42:48,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01582.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01582.JPG,a984f32c122745ab85970788dbb765cfd39db222,6422528,2026-05-24T19:37:27,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01583.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01583.JPG,a901945e547dcb92a807176c47143300c6c72d91,7569408,2026-05-24T19:37:48,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01584.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01584.JPG,0c2ef1cf7bc3b31fe17ee677a0dc0bab6761c5da,6225920,2026-05-24T19:38:04,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01587.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01587.JPG,79fb633dd93ef6125dfb034fc7f658d1af6f6f35,8781824,2026-05-25T10:23:35,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01588.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01588.JPG,d99e5ebc691fd5b2a799ba0e51bc2541cad5e229,11763712,2026-05-25T10:32:58,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01591.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01591.JPG,4809424862502a7a25801eb626c8774e6a70824f,10256384,2026-05-25T10:33:08,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01592.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01592.JPG,1797c89fc882b9b4aeb39438a1cc2db5fc29ccf2,10125312,2026-05-25T11:05:28,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01594.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01594.JPG,562bace580e106585df26ef784948e5fb69cd52e,6324224,2026-05-25T11:06:56,DateTimeOriginal,
+2026-05-28T09:22:53,copied,C:\Users\danie\Desktop\100MSDCF\DSC01595.JPG,D:\Bilder-Daniel\2026_Daniel\May\DSC01595.JPG,cc65cf7e9c61f28383e208a4e017ab87070ca948,7471104,2026-05-25T11:06:59,DateTimeOriginal,

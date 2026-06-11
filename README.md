@@ -1,133 +1,152 @@
 # 📁 FolderBuddy
 
-**FolderBuddy** is a Python script that automatically sorts your photos and videos into folders based on their creation date — keeping your digital memories neat and organized.
+**FolderBuddy** is a Python script that automatically sorts your photos and videos into folders based on their capture date — keeping your digital memories neat and organized.
 
 No more chaos in your DCIM dump — FolderBuddy moves each file into a year/month structure like:
 
 ```
 D:\Bilder-Name\
-├── 2023_Name\
+├── 2025_Name\
 │   ├── January\
 │   ├── February\
 │   └── ...
-├── 2024_Name\
+├── 2026_Name\
 │   ├── March\
 │   └── ...
 ```
 
-And yes, it **skips duplicates** and respects your manually curated folders like `2025_Name\Paris`!
+It **skips duplicates** anywhere in the destination tree (so manually curated folders like `2025_Name\Paris` work fine), keeps a persistent hash cache so re-runs are fast, and never leaves a half-written file behind if you Ctrl+C in the middle.
 
 ---
 
 ## 🚀 Features
 
-✅ Sorts **photos and videos** by creation date  
-✅ Automatically creates folders named like `2024_Daniel/May`  
-✅ Skips files that already exist anywhere in the destination (via file hash check)  
-✅ Prevents overwriting by adding suffixes  
-✅ Shows a **progress bar** while processing  
+- Sorts **photos and videos** by true capture date (EXIF / QuickTime / XMP / IPTC) with filesystem mtime as a last-resort fallback
+- **Persistent hash cache** of the destination — only new or changed files get re-hashed on the next run
+- **Size prefilter** — source files with no size match in the destination are never hashed at all
+- **Batched exiftool** — one process for hundreds of files (huge speedup on Windows)
+- **Atomic transfers** — copy to `<dst>.partial`, hash-verify, rename, then delete the source
+- **Locale-stable** — month folders are always English (no `März` accidentally living next to `March`)
+- **Dry-run mode** + **CSV log** of every action
+- Detects duplicates anywhere in the destination tree, including manually curated subfolders
 
 ---
 
 ## 🖼️ Supported File Types
 
-- **Images:** `.jpg`, `.jpeg`, `.png`, `.bmp`, `.tiff`, `.gif`
-- **Videos:** `.mp4`, `.mov`, `.avi`, `.mkv`, `.webm`, `.3gp`, `.wmv`, `.m4v`, `.hevc`
+- **Images:** `.jpg`, `.jpeg`, `.png`, `.bmp`, `.tiff`, `.tif`, `.gif`, `.heic`, `.heif`
+- **Videos:** `.mp4`, `.mov`, `.avi`, `.mkv`, `.hevc`, `.webm`, `.3gp`, `.wmv`, `.m4v`
+- **RAW:** `.cr2`, `.cr3`, `.nef`, `.arw`, `.dng`, `.rw2`, `.orf`, `.raf`
 
 ---
 
 ## ⚙️ Requirements
 
-- Python 3.7+
-- Install dependencies:
+- Python 3.9+
+- `tqdm` (progress bars):
   ```bash
-  pip install pillow tqdm
+  pip install tqdm
   ```
+- **`exiftool`** binary on your `PATH` — download from <https://exiftool.org/>. On Windows, rename `exiftool(-k).exe` to `exiftool.exe` and drop it in a folder that's on `PATH` (e.g. `C:\Windows\` or anywhere in your user `PATH`).
 
 ---
 
 ## 📂 Usage
 
-1. **Download** or clone this repo.
-2. **Set your paths** at the bottom of `main.py`:
+```bash
+python main.py --source "C:\Users\daniel\Desktop\Bilder" --dest "D:\Bilder-Daniel"
+```
 
-   ```python
-   source_folder = r'C:\Users\yourname\DCIM_dump'
-   destination_root = r'D:\Bilder-Name'
-   ```
+All options:
 
-3. **Run the script**:
+```
+--source, -s       Source folder (e.g., DCIM dump).            [required]
+--dest, -d         Destination root folder.                    [required]
+--year-suffix      Appended to year folder: <year>_<suffix>.   [default: Daniel]
+--copy             Copy instead of moving the files.
+--dry-run          Print what would happen without touching any files.
+--log-file         CSV log of every action (created/appended).
+--cache-file       Hash cache JSON path. [default: <dest>/.folderbuddy_cache.json]
+--no-cache         Ignore the persistent cache and rehash from scratch.
+--quiet, -q        Suppress progress bars.
+--verbose, -v      Verbose logging.
+```
 
-   ```bash
-   python main.py
-   ```
+**Recommended first run** (after upgrading from the old version):
 
-📦 All files from `source_folder` will be **moved** to their destination based on timestamp.
+```bash
+python main.py -s "C:\Users\daniel\Desktop\Bilder" -d "D:\Bilder-Daniel" \
+    --dry-run --log-file run.csv
+```
+
+This walks your destination, builds the hash cache (slow once, fast forever after), and writes a CSV showing exactly what *would* be moved. Inspect `run.csv`, then re-run without `--dry-run` to actually move files.
 
 ---
 
 ## 🧠 How It Works
 
-- Uses **EXIF data** for image dates (if available).
-- Falls back to **file modification time** for videos or missing EXIF.
-- Computes **SHA-1 hashes** of files in `destination_root` to avoid duplicates — even if you manually placed them somewhere like `2024_Daniel\Roadtrip`.
+1. **Index destination.** Walks `--dest`, validates the cache against on-disk size + mtime, and only hashes files that are new or changed since the last run. The cache lives at `<dest>\.folderbuddy_cache.json` by default.
+2. **Read source dates.** All source files go through a single (or few) `exiftool` invocation in batched mode.
+3. **Triage.** For each source file:
+   - Look up its size in the destination size index. If no match → it's not a duplicate; ship it.
+   - If a match → compute its SHA-1 and compare. If hash matches → skip (it's already in the destination, anywhere in the tree).
+4. **Transfer.** Stream-copy to `<target>.partial`, computing SHA-1 during the copy. Verify the hash, atomically rename, then delete the source (unless `--copy` was passed).
 
 ---
 
-## ✏️ Customize Folder Naming
+## 🧱 Folder Naming
 
-To change how the **year folder** is named (e.g., `Name_2024` instead of `2024_Name`), go to this line in `main.py`:
+- Year folder: `<year>_<suffix>` (e.g. `2026_Daniel`). Change with `--year-suffix`.
+- Month folder: full English name (`January`, `February`, …). This is hardcoded so the same Windows install will produce the same folder names regardless of system locale.
 
-```python
-# === Specify naming convention of folders ===
-year = f'{date.year}_Name'
-```
-
-Change it to any format you like, e.g.:
-
-```python
-year = f'Name_{date.year}'
-```
+If you have legacy folders from previous tools (e.g. `2010-Daniel\1005xx\Konfirmation`), FolderBuddy will happily read them for duplicate detection but never write into them — new files always go into the modern `<year>_<suffix>\<Month>\` structure.
 
 ---
 
-## 📸 Example Folder Structure
+## 📓 Log Format
 
-```
-Before:
-📁 DCIM
-├── IMG_001.jpg
-├── VID_002.mp4
-└── IMG_003.jpg
+With `--log-file run.csv` you get one row per file processed:
 
-After:
-📁 Bilder-Name
-├── 2023_Name
-│   └── March
-│       ├── IMG_001.jpg
-│       └── IMG_003.jpg
-└── 2024_Name
-    └── May
-        └── VID_002.mp4
-```
+| Column | Meaning |
+|---|---|
+| `timestamp` | When this row was written |
+| `action` | `moved`, `copied`, `skipped-duplicate`, `would-move`, `would-copy`, `error` |
+| `src` | Source path |
+| `dst` | Destination path (empty for skipped/error rows) |
+| `sha1` | SHA-1 of the file contents |
+| `size_bytes` | File size |
+| `date_used` | The capture date FolderBuddy chose |
+| `date_source` | Which metadata field that came from (e.g. `DateTimeOriginal`, `FS:mtime`) |
+| `note` | Reason / error message |
+
+---
+
+## 🛟 What If Something Goes Wrong?
+
+- **Interrupted mid-run:** Any file being copied at the moment of interruption leaves only a `<name>.partial` in the destination, which is harmless and gets overwritten next run. The original on the source drive is untouched.
+- **Bad cache:** Delete `<dest>\.folderbuddy_cache.json` (or run with `--no-cache`) and the next run will rebuild it.
+- **Wrong sort:** Use `--dry-run --log-file plan.csv` first; if you don't like what it plans to do, nothing has been touched.
 
 ---
 
 ## 💡 Tips
 
-- Want to **copy** instead of move? Replace:
-  ```python
-  shutil.move(src_path, dst_path)
-  ```
-  with:
-  ```python
-  shutil.copy2(src_path, dst_path)
-  ```
-
-- Want a **log file** or a **dry-run preview**? Ask the author 😄
+- Run with `--copy` the first few times to build confidence before letting it move files off your camera card.
+- Pair with Windows Task Scheduler to auto-import whenever a specific drive is connected.
+- The cache is portable — moving the destination drive between machines just works as long as the path layout is preserved relative to `--dest`.
 
 ---
 
-## 🧼 Project Vibe
+## 📸 Example
 
-This is **FolderBuddy** – your chill digital assistant that doesn’t ask questions, just sorts your files with minimal fuss. 🤖📂✨
+```
+Before:                                    After:
+📁 DCIM                                    📁 Bilder-Daniel
+├── IMG_001.jpg  (taken 2025-03-15)        ├── 2025_Daniel
+├── VID_002.mp4  (taken 2026-04-12)        │   └── March
+└── IMG_003.jpg  (taken 2025-03-20)        │       ├── IMG_001.jpg
+                                           │       └── IMG_003.jpg
+                                           └── 2026_Daniel
+                                               └── April
+                                                   └── VID_002.mp4
+```
