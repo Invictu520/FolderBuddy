@@ -19,6 +19,19 @@ It **skips duplicates** anywhere in the destination tree (so manually curated fo
 
 ---
 
+## 🖱️ Quick Start (window)
+
+1. Put `exiftool.exe` (plus its `exiftool_files` folder) next to `main.py`. No PATH setup needed.
+2. Double-click **`FolderBuddy.bat`**.
+3. Insert the camera's SD card: it is picked up automatically as source (any drive with a `DCIM` folder). Otherwise choose a folder with *Durchsuchen…*.
+4. Choose the destination once, press **Vorschau** to see what would happen, then **Übertragen**.
+
+Everything you choose is remembered in `folderbuddy.ini` next to the script. At the end you get a summary per folder, a list of file types that were left behind, and a button to open the destination.
+
+Phones that connect via MTP (most Android phones, iPhones) don't appear as a drive, so copy their `DCIM` folder to the PC first and pick that folder.
+
+---
+
 ## 🚀 Features
 
 - Sorts **photos and videos** by true capture date (EXIF / QuickTime / XMP / IPTC) with filesystem mtime as a last-resort fallback
@@ -28,6 +41,10 @@ It **skips duplicates** anywhere in the destination tree (so manually curated fo
 - **Atomic transfers** — copy to `<dst>.partial`, hash-verify, rename, then delete the source
 - **Locale-stable** — month folders are always English (no `März` accidentally living next to `March`)
 - **Dry-run mode** + **CSV log** of every action
+- **Window** (`gui.py`, start via `FolderBuddy.bat`) with preview, progress bar and German summary
+- **Remembers settings** in `folderbuddy.ini`; camera cards with a `DCIM` folder are detected automatically
+- **Optional numbered month folders** (`03_March`) so Explorer sorts them chronologically
+- Reports files it **ignored** (e.g. `.xmp` sidecars) instead of skipping them silently
 - Detects duplicates anywhere in the destination tree, including manually curated subfolders
 
 ---
@@ -35,19 +52,16 @@ It **skips duplicates** anywhere in the destination tree (so manually curated fo
 ## 🖼️ Supported File Types
 
 - **Images:** `.jpg`, `.jpeg`, `.png`, `.bmp`, `.tiff`, `.tif`, `.gif`, `.heic`, `.heif`
-- **Videos:** `.mp4`, `.mov`, `.avi`, `.mkv`, `.hevc`, `.webm`, `.3gp`, `.wmv`, `.m4v`
+- **Videos:** `.mp4`, `.mov`, `.avi`, `.mkv`, `.hevc`, `.webm`, `.3gp`, `.wmv`, `.m4v`, `.mts`, `.m2ts`
 - **RAW:** `.cr2`, `.cr3`, `.nef`, `.arw`, `.dng`, `.rw2`, `.orf`, `.raf`
 
 ---
 
 ## ⚙️ Requirements
 
-- Python 3.9+
-- `tqdm` (progress bars):
-  ```bash
-  pip install tqdm
-  ```
-- **`exiftool`** binary on your `PATH` — download from <https://exiftool.org/>. On Windows, rename `exiftool(-k).exe` to `exiftool.exe` and drop it in a folder that's on `PATH` (e.g. `C:\Windows\` or anywhere in your user `PATH`).
+- Python 3.9+ (the python.org installer includes Tkinter for the window)
+- Optional: `tqdm` for progress bars on the console (`pip install tqdm`)
+- **`exiftool`** — download from <https://exiftool.org/>. On Windows, rename `exiftool(-k).exe` to `exiftool.exe` and put it, together with its `exiftool_files` folder, next to `main.py` (or anywhere on your `PATH`). Don't keep the `(-k)` name: that build waits for a key press and would hang.
 
 ---
 
@@ -57,19 +71,30 @@ It **skips duplicates** anywhere in the destination tree (so manually curated fo
 python main.py --source "C:\Users\daniel\Desktop\Bilder" --dest "D:\Bilder-Daniel"
 ```
 
-All options:
+All options (defaults come from `folderbuddy.ini`):
 
 ```
---source, -s       Source folder (e.g., DCIM dump).            [required]
---dest, -d         Destination root folder.                    [required]
+--source, -s       Source folder (e.g., DCIM dump). If omitted: the one attached
+                   camera card with a DCIM folder, else the saved source.
+--dest, -d         Destination root folder.
 --year-suffix      Appended to year folder: <year>_<suffix>.   [default: Daniel]
---copy             Copy instead of moving the files.
+--copy/--no-copy   Copy instead of moving the files (--no-copy = move).
+--month-style      name (March) or number (03_March).          [default: name]
 --dry-run          Print what would happen without touching any files.
 --log-file         CSV log of every action (created/appended).
 --cache-file       Hash cache JSON path. [default: <dest>/.folderbuddy_cache.json]
 --no-cache         Ignore the persistent cache and rehash from scratch.
+--open             Open the destination folder when done.
+--save-settings    Store the given source/dest/suffix/mode as new defaults.
 --quiet, -q        Suppress progress bars.
 --verbose, -v      Verbose logging.
+```
+
+Save your usual destination once, then a plain `python main.py` is enough:
+
+```bash
+python main.py -d "D:\Bilder-Daniel" --save-settings --dry-run
+python main.py            # uses the attached SD card and the saved settings
 ```
 
 **Recommended first run** (after upgrading from the old version):
@@ -97,7 +122,7 @@ This walks your destination, builds the hash cache (slow once, fast forever afte
 ## 🧱 Folder Naming
 
 - Year folder: `<year>_<suffix>` (e.g. `2026_Daniel`). Change with `--year-suffix`.
-- Month folder: full English name (`January`, `February`, …). This is hardcoded so the same Windows install will produce the same folder names regardless of system locale.
+- Month folder: full English name (`January`, `February`, …). This is hardcoded so the same Windows install will produce the same folder names regardless of system locale. With `--month-style number` (or the checkbox in the window) they become `01_January`, `02_February`, … and sort chronologically. Duplicate detection works across both styles.
 
 If you have legacy folders from previous tools (e.g. `2010-Daniel\1005xx\Konfirmation`), FolderBuddy will happily read them for duplicate detection but never write into them — new files always go into the modern `<year>_<suffix>\<Month>\` structure.
 

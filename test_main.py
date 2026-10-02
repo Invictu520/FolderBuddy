@@ -31,6 +31,9 @@ sys.modules.setdefault("tqdm", types.SimpleNamespace(tqdm=lambda x, **k: x))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import main as fb  # noqa: E402
 
+# Never let a real folderbuddy.ini next to main.py change test defaults.
+fb.CONFIG_PATH = Path(tempfile.gettempdir()) / "folderbuddy_test_does_not_exist.ini"
+
 
 def make_photo(path: Path, content: bytes, mtime: float | None = None) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -186,7 +189,7 @@ class TestEndToEnd(unittest.TestCase):
         date_pairs: (filename_substring, datetime) tuples — files matching
         any substring get that date; everything else gets fs mtime.
         """
-        def fn(paths):
+        def fn(paths, progress=None):
             result = {}
             for p in paths:
                 for sub, dt in date_pairs:
@@ -444,6 +447,137 @@ class TestEndToEnd(unittest.TestCase):
             self.assertTrue(renamed.exists())
             self.assertEqual(renamed.read_bytes(),
                              b"different version, same name")
+
+
+class TestUsabilityAdditions(unittest.TestCase):
+    """Settings file, card detection, summary and dry-run accuracy."""
+
+    def _fake_dates(self, dt):
+        def fn(paths, progress=None):
+            return {p: (dt, "EXIF:Test") for p in paths}
+        return fn
+
+    def _args(self, src, dst, *extra):
+        return fb.build_parser(dict(fb.DEFAULT_SETTINGS)).parse_args([
+            "--source", str(src), "--dest", str(dst), "--quiet", *extra,
+        ])
+
+    def test_settings_roundtrip_and_parser_defaults(self):
+        with tempfile.TemporaryDirectory() as td:
+            ini = Path(td) / "fb.ini"
+            fb.save_settings({**fb.DEFAULT_SETTINGS, "dest": "D:\\Bilder",
+                              "year_suffix": "Anna", "copy": True,
+                              "month_style": "number"}, ini)
+            st = fb.load_settings(ini)
+            self.assertEqual(st["dest"], "D:\\Bilder")
+            self.assertEqual(st["year_suffix"], "Anna")
+            self.assertIs(st["copy"], True)
+            args = fb.build_parser(st).parse_args([])
+            self.assertEqual(args.dest, "D:\\Bilder")
+            self.assertTrue(args.copy)
+            self.assertEqual(args.month_style, "number")
+            # CLI flag still overrides the saved value
+            self.assertFalse(fb.build_parser(st).parse_args(["--no-copy"]).copy)
+
+    def test_missing_or_broken_settings_use_defaults(self):
+        with tempfile.TemporaryDirectory() as td:
+            ini = Path(td) / "fb.ini"
+            self.assertEqual(fb.load_settings(ini), fb.DEFAULT_SETTINGS)
+            ini.write_text("[FolderBuddy]\ncopy = vielleicht\nmonth_style = x\n")
+            st = fb.load_settings(ini)
+            self.assertIs(st["copy"], False)
+            self.assertEqual(st["month_style"], "name")
+
+    def test_find_camera_sources(self):
+        with tempfile.TemporaryDirectory() as td:
+            td = Path(td)
+            (td / "card" / "DCIM" / "100MSDCF").mkdir(parents=True)
+            (td / "stick").mkdir()
+            found = fb.find_camera_sources([td / "card", td / "stick", td / "nope"])
+            self.assertEqual(found, [td / "card" / "DCIM"])
+
+    def test_month_style_number(self):
+        with tempfile.TemporaryDirectory() as td:
+            td = Path(td)
+            src, dst = td / "s", td / "d"
+            make_photo(src / "a.jpg", b"A")
+            with patch.object(fb, "read_dates_batch",
+                              self._fake_dates(datetime(2025, 3, 1))):
+                fb.run_transfer(self._args(src, dst, "--month-style", "number"))
+            self.assertTrue((dst / "2025_Daniel" / "03_March" / "a.jpg").exists())
+
+    def test_dry_run_counts_bytes_and_matches_real_names(self):
+        with tempfile.TemporaryDirectory() as td:
+            td = Path(td)
+            src, dst = td / "s", td / "d"
+            make_photo(src / "x" / "IMG_1.jpg", b"first")
+            make_photo(src / "y" / "IMG_1.jpg", b"second!")
+            log_path = td / "plan.csv"
+            with patch.object(fb, "read_dates_batch",
+                              self._fake_dates(datetime(2025, 3, 1))):
+                stats = fb.run_transfer(self._args(
+                    src, dst, "--dry-run", "--log-file", str(log_path)))
+            self.assertEqual(stats.transferred, 2)
+            self.assertEqual(stats.bytes_transferred, 5 + 7)
+            with log_path.open() as f:
+                targets = [Path(r["dst"]).name for r in csv.DictReader(f)]
+            self.assertEqual(sorted(targets), ["IMG_1.jpg", "IMG_1_1.jpg"])
+
+    def test_dry_run_detects_duplicates_within_source(self):
+        with tempfile.TemporaryDirectory() as td:
+            td = Path(td)
+            src, dst = td / "s", td / "d"
+            make_photo(src / "a.jpg", b"same picture")
+            make_photo(src / "copy" / "a_copy.jpg", b"same picture")
+            make_photo(src / "b.jpg", b"same size!!!")  # same length, other content
+            with patch.object(fb, "read_dates_batch",
+                              self._fake_dates(datetime(2025, 3, 1))):
+                dry = fb.run_transfer(self._args(src, dst, "--dry-run"))
+            self.assertEqual((dry.transferred, dry.skipped_duplicate), (2, 1))
+            with patch.object(fb, "read_dates_batch",
+                              self._fake_dates(datetime(2025, 3, 1))):
+                real = fb.run_transfer(self._args(src, dst, "--copy"))
+            self.assertEqual((real.transferred, real.skipped_duplicate), (2, 1))
+
+    def test_ignored_files_are_reported(self):
+        with tempfile.TemporaryDirectory() as td:
+            td = Path(td)
+            src, dst = td / "s", td / "d"
+            make_photo(src / "a.jpg", b"A")
+            make_photo(src / "a.xmp", b"sidecar")
+            make_photo(src / "b.xmp", b"sidecar2")
+            make_photo(src / "clip.MTS", b"video")
+            make_photo(src / "Thumbs.db", b"junk")
+            with patch.object(fb, "read_dates_batch",
+                              self._fake_dates(datetime(2025, 3, 1))):
+                stats = fb.run_transfer(self._args(src, dst))
+            self.assertEqual(stats.transferred, 2)  # .MTS is supported now
+            self.assertEqual(dict(stats.ignored), {".xmp": 2})
+            summary = fb.format_summary(stats)
+            self.assertIn("2× .xmp", summary)
+            self.assertIn("Verschoben: 2 Dateien", summary)
+
+    def test_bad_input_raises_friendly_error(self):
+        with tempfile.TemporaryDirectory() as td:
+            args = self._args(Path(td) / "missing", Path(td) / "d")
+            with self.assertRaises(ValueError):
+                fb.run_transfer(args)
+            args = self._args(td, td)
+            with self.assertRaises(ValueError):
+                fb.run_transfer(args)
+
+    def test_progress_callback_reaches_the_end(self):
+        with tempfile.TemporaryDirectory() as td:
+            td = Path(td)
+            src, dst = td / "s", td / "d"
+            for i in range(3):
+                make_photo(src / f"{i}.jpg", bytes([i]) * (i + 1))
+            calls = []
+            with patch.object(fb, "read_dates_batch",
+                              self._fake_dates(datetime(2025, 3, 1))):
+                fb.run_transfer(self._args(src, dst),
+                                progress=lambda *a: calls.append(a))
+            self.assertEqual(calls[-1], ("Fertig", 3, 3))
 
 
 if __name__ == "__main__":
